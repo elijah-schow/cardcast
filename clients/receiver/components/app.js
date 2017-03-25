@@ -102,7 +102,7 @@ angular.module('cardcast-receiver', [
   return {
     restrict: 'E',
     scope: { content: '=' },
-    templateUrl: '/assets/projector.html',
+    template: '/assets/projector.html',
     link: function($scope, $element){
       const aspectRatio = $window.innerWidth / $window.innerHeight;
       const width = $element.find('div')[0].offsetWidth;
